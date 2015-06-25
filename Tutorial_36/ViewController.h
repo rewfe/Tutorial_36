@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TestViewController.h"
 
-@interface ViewController : UIViewController <UIActionSheetDelegate>
+@interface ViewController : UIViewController <UIActionSheetDelegate, TestViewControllerDelegate>
 
 - (IBAction)showNormalActionSheet:(id)sender;
 - (IBAction)showDeleteConfirmation:(id)sender;
 
 - (IBAction)showColorsActionSheet:(id)sender;
+- (IBAction)showUserDataEntryForm:(id)sender;
 
 @end
 
